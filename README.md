@@ -18,3 +18,8 @@ Then I tested that file locally. If that works, deploy it to app engine using
  Navigate to App Engine : You will see now two versions of same default service. If you click on versions, you will notice that newly created app is receiving 100 % of traffic.
  
  Henceforth, you have automated the deployment on app engine using cloud build triggers. 
+
+
+**NOTE : **
+
+      I have deployed this app to second (non-default) service of one app engine deployed in a project. Hence, you could notice that in myserviceone.yaml file, I have mentioned service=myserviceone ( it's not needed in default service ). Similarly, argument in cloudbuild.yaml file will just be gcloud app deploy ( no need of giving specific yaml file ).
